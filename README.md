@@ -5,9 +5,9 @@
 ## how to use
 
 
-### json
+### javascript
 
-``` 
+``` javascript
 
 $(".fr-js-totop").scrollToTopGently({
   topThreshold  : 100,
@@ -44,7 +44,21 @@ $(".fr-js-totop").scrollToTopGently({
 ### html
 
 
-``` 
+``` html
+<script src="./src/js/jquery-2.0.3.min.js"></script>
+<script src="./src/js/jquery.easing.1.3.js"></script>
+<script src="./src/coffee/scroll-to-top-gently.js"></script>
+<script>
+  $(function(){
+    $(".fr-js-totop").scrollToTopGently({
+      topThreshold  : 100,
+      duration      : 200,
+      skip          : true,
+      skipTargetTop : 200
+    });
+  })
+</script>
+
 
 <a class="fr-js-totop">to Top</a>
 

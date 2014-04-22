@@ -1,6 +1,6 @@
 # scrollToTopGently
 
-すっとページ TOP までスクロールするやつ
+jquery gently scroll to top plugin
 
 ## how to use
 
@@ -20,21 +20,18 @@ $(".fr-js-totop").scrollToTopGently({
 
 ### option 
 
-
 - topThreshold
-  - toTopボタンを表示するしきい値
+  - (Number) when you scroll down the topThreshold value, the toTop button will appear in the display
 - duration
-  - Topへ戻るアニメーションの時間
+  - (Number) duration of scroll animation
 - skip
-  - すっと戻る = true, だらっと戻る = false
+  - (Bool) use gently scroll = true, use normal scroll = false
 - skipTargetTop
-  - すっと一気に戻る時のTop位置
+  - (Number) target point of gently scroll
 - ease
-  - String　どのeaseing関数をつかうか
+  - (String) ease param, 'easeOutCubic' etc..
 - leftTarget
-  - String jQueryのセレクタ
-  - リサイズ時にコンテンツ内のどの要素のLEFT位置にボタンを追従させるか指定できる
-
+  - (String || jquery selector) the button follow leftTarget Object when the window is resized
 
 
 --
@@ -63,3 +60,9 @@ $(".fr-js-totop").scrollToTopGently({
 <a class="fr-js-totop">to Top</a>
 
 ```
+
+--
+
+### sample
+ 
+http://shunyahagiwara.com/open/scroll-to-top-gently/sample.html
